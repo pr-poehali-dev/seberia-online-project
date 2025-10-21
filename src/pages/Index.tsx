@@ -45,7 +45,7 @@ const Index = () => {
               SEBERIA ONLINE
             </h1>
             <div className="hidden md:flex items-center gap-8">
-              <a href="#play" className="text-white/80 hover:text-white transition-colors font-medium">
+              <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-white/80 hover:text-white transition-colors font-medium">
                 Играть
               </a>
               <a href="#donate" className="text-white/80 hover:text-white transition-colors font-medium">
