@@ -177,7 +177,7 @@ const Index = () => {
             <div>
               <h5 className="font-bold text-white mb-3">Социальные сети</h5>
               <div className="flex gap-3">
-                <Button size="icon" variant="outline" className="border-white/20 hover:border-[#FF6B00] hover:bg-[#FF6B00]/10">
+                <Button size="icon" variant="outline" className="border-white/20 hover:border-[#FF6B00] hover:bg-[#FF6B00]/10" onClick={() => window.open('https://t.me/siberiacrmp01', '_blank')}>
                   <Icon name="MessageCircle" size={20} className="text-white" />
                 </Button>
                 <Button size="icon" variant="outline" className="border-white/20 hover:border-[#FF6B00] hover:bg-[#FF6B00]/10">
