@@ -54,7 +54,7 @@ const Index = () => {
               <a href="https://t.me/forumsiberiaonline" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors font-medium">
                 Форум
               </a>
-              <a href="#support" className="text-white/80 hover:text-white transition-colors font-medium">
+              <a href="https://t.me/Twix181" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors font-medium">
                 Поддержка
               </a>
             </div>
@@ -167,7 +167,7 @@ const Index = () => {
             <div>
               <h5 className="font-bold text-white mb-3">Помощь</h5>
               <ul className="space-y-2 text-white/60 text-sm">
-                <li><a href="#support" className="hover:text-white transition-colors">Поддержка</a></li>
+                <li><a href="https://t.me/Twix181" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Поддержка</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Правила</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
               </ul>
