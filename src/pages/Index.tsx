@@ -164,14 +164,7 @@ const Index = () => {
                 <li><a href="#play" className="hover:text-white transition-colors">Играть</a></li>
                 <li><a href="#donate" className="hover:text-white transition-colors">Донат</a></li>
                 <li><a href="https://t.me/forumsiberiaonline" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Форум</a></li>
-              </ul>
-            </div>
-            <div>
-              <h5 className="font-bold text-white mb-3">Помощь</h5>
-              <ul className="space-y-2 text-white/60 text-sm">
                 <li><a href="https://t.me/Twix181" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Поддержка</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Правила</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
               </ul>
             </div>
             <div>
