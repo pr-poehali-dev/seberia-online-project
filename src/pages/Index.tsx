@@ -84,6 +84,7 @@ const Index = () => {
               <Button
                 size="lg"
                 className="bg-[#FF6B00] hover:bg-[#FF6B00]/90 text-white font-bold px-8 py-6 text-lg rounded-xl shadow-lg shadow-[#FF6B00]/30 transition-all hover:scale-105"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               >
                 <Icon name="Gamepad2" className="mr-2" size={24} />
                 Начать играть
