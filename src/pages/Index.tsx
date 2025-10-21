@@ -1,14 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
-  const servers = [
-    { name: "Server Alpha", online: 1500, map: "Роблокс" },
-    { name: "Server Beta", online: 890, map: "Майнкрафт" },
-    { name: "Server Gamma", online: 1120, map: "ГТА" },
-  ];
 
   const features = [
     {
@@ -97,38 +91,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="play" className="py-20 bg-[#0F3460]/50">
-        <div className="container mx-auto px-4">
-          <h3 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Доступные серверы
-          </h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {servers.map((server, index) => (
-              <Card
-                key={index}
-                className="bg-[#16213E] border-2 border-[#FF6B00]/20 hover:border-[#FF6B00]/60 transition-all duration-300 p-6 rounded-2xl hover:scale-105"
-              >
-                <div className="flex justify-between items-start mb-4">
-                  <div>
-                    <h4 className="text-xl font-bold text-white mb-1">{server.name}</h4>
-                    <p className="text-white/60 text-sm">{server.map}</p>
-                  </div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                </div>
-                <div className="flex items-center justify-between mb-6">
-                  <div className="flex items-center gap-2">
-                    <Icon name="Users" size={20} className="text-white/60" />
-                    <span className="text-white font-semibold">{server.online} online</span>
-                  </div>
-                </div>
-                <Button className="w-full bg-[#FF6B00] hover:bg-[#FF6B00]/90 text-white font-bold rounded-xl">
-                  Играть
-                </Button>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       <section className="py-20">
         <div className="container mx-auto px-4">
