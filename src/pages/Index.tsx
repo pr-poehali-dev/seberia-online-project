@@ -138,6 +138,7 @@ const Index = () => {
             <Button
               size="lg"
               className="bg-[#FF6B00] hover:bg-[#FF6B00]/90 text-white font-bold px-12 py-6 text-lg rounded-xl shadow-lg shadow-[#FF6B00]/30"
+              onClick={() => window.open('https://t.me/Twix181', '_blank')}
             >
               Открыть донат-магазин
             </Button>
