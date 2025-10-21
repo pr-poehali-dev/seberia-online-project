@@ -198,7 +198,7 @@ const Index = () => {
             <div className="text-center mb-6">
               <Icon name="Heart" size={48} className="text-[#FF6B00] mx-auto mb-4" />
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Выбери кому донатить
+                Выбери через кого донатить
               </h3>
               <p className="text-white/70">
                 Поддержи команду проекта
