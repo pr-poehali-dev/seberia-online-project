@@ -1,8 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
+  const { toast } = useToast();
+
+  const handleLauncherClick = () => {
+    toast({
+      title: "Пока не доступно",
+      description: "Скачивание лаунчера временно недоступно",
+    });
+  };
 
   const features = [
     {
@@ -83,6 +92,7 @@ const Index = () => {
                 size="lg"
                 variant="outline"
                 className="border-2 border-white/30 text-white hover:bg-white/10 font-bold px-8 py-6 text-lg rounded-xl"
+                onClick={handleLauncherClick}
               >
                 Скачать лаунчер
               </Button>
