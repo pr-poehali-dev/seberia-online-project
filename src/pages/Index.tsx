@@ -37,7 +37,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#16213E] to-[#0F3460]">
+    <div className="min-h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/0c856444-4639-4817-a706-57320383973b.jpg)' }}>
       <nav className="border-b border-white/10 backdrop-blur-sm bg-[#16213E]/80 sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
