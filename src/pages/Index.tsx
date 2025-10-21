@@ -2,9 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
 
 const Index = () => {
   const { toast } = useToast();
+  const [isDonateModalOpen, setIsDonateModalOpen] = useState(false);
 
   const handleLauncherClick = () => {
     toast({
@@ -48,9 +50,9 @@ const Index = () => {
               <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-white/80 hover:text-white transition-colors font-medium">
                 Играть
               </a>
-              <a href="#donate" className="text-white/80 hover:text-white transition-colors font-medium">
+              <button onClick={() => setIsDonateModalOpen(true)} className="text-white/80 hover:text-white transition-colors font-medium">
                 Донат
-              </a>
+              </button>
               <a href="https://t.me/forumsiberiaonline" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-colors font-medium">
                 Форум
               </a>
@@ -139,7 +141,7 @@ const Index = () => {
             <Button
               size="lg"
               className="bg-[#FF6B00] hover:bg-[#FF6B00]/90 text-white font-bold px-12 py-6 text-lg rounded-xl shadow-lg shadow-[#FF6B00]/30"
-              onClick={() => window.open('https://t.me/Twix181', '_blank')}
+              onClick={() => setIsDonateModalOpen(true)}
             >
               Открыть донат-магазин
             </Button>
@@ -189,6 +191,47 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      {isDonateModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm" onClick={() => setIsDonateModalOpen(false)}>
+          <div className="bg-[#16213E] border border-white/20 rounded-3xl p-8 max-w-md w-full mx-4 shadow-2xl" onClick={(e) => e.stopPropagation()}>
+            <div className="text-center mb-6">
+              <Icon name="Heart" size={48} className="text-[#FF6B00] mx-auto mb-4" />
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                Выбери кому донатить
+              </h3>
+              <p className="text-white/70">
+                Поддержи команду проекта
+              </p>
+            </div>
+            <div className="space-y-4">
+              <Button
+                size="lg"
+                className="w-full bg-[#FF6B00] hover:bg-[#FF6B00]/90 text-white font-bold py-6 text-lg rounded-xl shadow-lg"
+                onClick={() => window.open('https://t.me/Twix181', '_blank')}
+              >
+                <Icon name="User" className="mr-2" size={24} />
+                Твикс
+              </Button>
+              <Button
+                size="lg"
+                className="w-full bg-[#0F3460] hover:bg-[#0F3460]/80 text-white font-bold py-6 text-lg rounded-xl shadow-lg border border-white/20"
+                onClick={() => window.open('https://t.me/Mr_Boyko6', '_blank')}
+              >
+                <Icon name="User" className="mr-2" size={24} />
+                Максон
+              </Button>
+            </div>
+            <Button
+              variant="ghost"
+              className="w-full mt-4 text-white/70 hover:text-white"
+              onClick={() => setIsDonateModalOpen(false)}
+            >
+              Закрыть
+            </Button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
