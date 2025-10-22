@@ -44,7 +44,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             <h1 className="text-2xl md:text-3xl font-bold text-white tracking-wider">
-              SEBERIA ONLINE
+              SIBERIA ONLINE
             </h1>
             <div className="hidden md:flex items-center gap-8">
               <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-white/80 hover:text-white transition-colors font-medium">
@@ -75,7 +75,7 @@ const Index = () => {
               СЕРВЕР ОНЛАЙН
             </Badge>
             <h2 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
-              SEBERIA
+              SIBERIA
               <br />
               <span className="text-[#FF6B00]">ONLINE</span>
             </h2>
@@ -153,7 +153,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h4 className="text-xl font-bold text-white mb-4">SEBERIA ONLINE</h4>
+              <h4 className="text-xl font-bold text-white mb-4">SIBERIA ONLINE</h4>
               <p className="text-white/60 text-sm">
                 Лучший игровой сервер с активным комьюнити
               </p>
