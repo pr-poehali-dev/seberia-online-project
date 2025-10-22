@@ -174,7 +174,7 @@ const Index = () => {
                   <Icon name="MessageCircle" size={20} className="text-white" />
                 </Button>
                 <Button size="icon" variant="outline" className="border-white/20 hover:border-[#FF6B00] hover:bg-[#FF6B00]/10" onClick={() => window.open('https://discord.gg/KCgeJJGV', '_blank')}>
-                  <Icon name="MessageSquare" size={20} className="text-white" />
+                  <Icon name="Blend" size={20} className="text-white" />
                 </Button>
               </div>
             </div>
