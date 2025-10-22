@@ -155,7 +155,7 @@ const Index = () => {
             <div>
               <h4 className="text-xl font-bold text-white mb-4">SIBERIA ONLINE</h4>
               <p className="text-white/60 text-sm">
-                Лучший игровой сервер с добрым комьюнити
+                Лучший игровой сервер с добрым комьюнити!
               </p>
             </div>
             <div>
