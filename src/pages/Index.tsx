@@ -7,6 +7,7 @@ import { useState } from "react";
 const Index = () => {
   const { toast } = useToast();
   const [isDonateModalOpen, setIsDonateModalOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleLauncherClick = () => {
     toast({
@@ -60,10 +61,55 @@ const Index = () => {
                 Поддержка
               </a>
             </div>
-            <Button className="md:hidden" variant="ghost" size="icon">
+            <Button className="md:hidden" variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
               <Icon name="Menu" className="text-white" />
             </Button>
           </div>
+          
+          {isMobileMenuOpen && (
+            <div className="md:hidden border-t border-white/10 py-4">
+              <div className="flex flex-col gap-4">
+                <a 
+                  href="#" 
+                  onClick={(e) => { 
+                    e.preventDefault(); 
+                    window.scrollTo({ top: 0, behavior: 'smooth' }); 
+                    setIsMobileMenuOpen(false);
+                  }} 
+                  className="text-white/80 hover:text-white transition-colors font-medium"
+                >
+                  Играть
+                </a>
+                <button 
+                  onClick={() => {
+                    setIsDonateModalOpen(true);
+                    setIsMobileMenuOpen(false);
+                  }} 
+                  className="text-white/80 hover:text-white transition-colors font-medium text-left"
+                >
+                  Донат
+                </button>
+                <a 
+                  href="https://t.me/forumsiberiaonline" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-white/80 hover:text-white transition-colors font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Форум
+                </a>
+                <a 
+                  href="https://t.me/Twix181" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-white/80 hover:text-white transition-colors font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Поддержка
+                </a>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
